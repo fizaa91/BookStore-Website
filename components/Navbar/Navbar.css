@@ -1,0 +1,120 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #997a8d; /* Updated color */
+    padding: 10px 20px;
+    position: relative; /* Ensure the navbar has relative positioning for z-index to work */
+    z-index: 20; /* Ensure the navbar is on top of other content */
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .cart a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a:hover {
+    color: #faebd7;
+  }
+  
+  /* Responsive navbar */
+  @media (max-width: 768px) {
+    .navbar{
+        position: fixed;
+        width: 100%;
+    }
+    .nav-links {
+      display: flex; /* Ensure flexbox is used for alignment */
+      flex-direction: column;
+      justify-content: center; /* Center items vertically */
+      position: fixed; /* Fix position to cover full height */
+      top: 0;
+      right: 0;
+      background-color: #997a8d;
+      width: 50%; /* Full width */
+      max-width: 300px; /* Max width for better visibility */
+      height: 100vh; /* Full viewport height */
+      padding: 20px;
+      border-radius: 0; /* Remove border-radius for a full-height view */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateX(100%); /* Initially hide off-screen */
+      transition: transform 0.3s ease; /* Smooth transition */
+      z-index: 10; /* Ensure the dropdown is above other elements */
+    }
+  
+    .nav-links.active {
+      transform: translateX(0); /* Show when active */
+    }
+  
+    .nav-links li {
+      margin: 20px 0; /* Space between items */
+      text-align: center; /* Center text within items */
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+      }
+  
+    .hamburger {
+      display: block; /* Show hamburger menu on smaller screens */
+      cursor: pointer;
+      color: white;
+      z-index: 20; /* Ensure the hamburger is above other elements */
+    }
+  
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .hamburger {
+      display: none; /* Hide hamburger menu on larger screens */
+    }
+  }
+  

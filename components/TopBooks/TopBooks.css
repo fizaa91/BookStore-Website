@@ -1,0 +1,71 @@
+/* src/components/TopBooks/TopBooks.css */
+.top-books-section {
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-books-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .top-books-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .top-book-card {
+    background-color: #dfdbe5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .top-book-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .top-book-image:hover {
+    scale: 1.1;
+  }
+  
+  .top-book-info {
+    margin-top: 10px;
+  }
+  
+  .top-book-info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .top-book-info p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .top-books-section h2 {
+      font-size: 2rem;
+    }
+    
+    .top-books-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .top-book-card {
+      max-width: 100%;
+    }
+  }
+  

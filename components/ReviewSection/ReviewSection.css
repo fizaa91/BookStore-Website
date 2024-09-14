@@ -1,0 +1,98 @@
+.review-section {
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.review-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+  
+.reviews-list {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+  
+.review-card {
+    background-color: #997a8d;
+    border: 1px solid #ddd;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+  
+.review-text {
+    font-style: italic;
+}
+  
+.review-author {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* New class for date */
+.review-author {
+    color: #DFDBE5;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.review-form {
+    width: 100%;
+    max-width: 600px;
+}
+  
+.review-form textarea,
+.review-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+.review-form textarea {
+    resize: vertical;
+}
+  
+.review-form input {
+    margin-top: 10px;
+}
+  
+.review-form button {
+    background-color: #997a8d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+.review-form button:hover {
+    background-color: #765b6b;
+}
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .review-section h2 {
+        font-size: 2rem;
+    }
+  
+    .review-form textarea,
+    .review-form input {
+        width: 100%;
+    }
+  
+    .review-form button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
